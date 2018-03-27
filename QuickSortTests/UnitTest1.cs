@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Быстрая_сортировка;
 
@@ -46,8 +46,7 @@ namespace QuickSortTests
         {
             var array = new int[0];
             Sort.QuickSort(array, 0, array.Length - 1);
-            foreach(int e in array)
-                Assert.IsNull(e);
+            Assert.IsTrue(array.Length == 0);
         }
 
         [TestMethod]
